@@ -1,25 +1,27 @@
 public class No {
-    private String numero;
+    private Conta conta;
     private No esquerda;
     private No direita;
-    private No pai;
-    private int fatBal; // Fator de balanceamento
+    private int fatBall;
 
-
-    public No(String numero) {
-        setEsquerda(null);
-        setDireita(null);
-        setPai(null);
-        setFatBal(0);
-        this.numero = numero;
+    public int getFatBall() {
+        return fatBall;
     }
 
-    public String getNumero() {
-        return numero;
+    public void setFatBall(int fatBall) {
+        this.fatBall = fatBall;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public No(Conta conta) {
+        this.conta = conta;
+    }
+
+    public Conta getConta() {
+        return conta;
+    }
+
+    public void setConta(Conta conta) {
+        this.conta = conta;
     }
 
     public No getEsquerda() {
@@ -38,19 +40,4 @@ public class No {
         this.direita = direita;
     }
 
-    public No getPai() {
-        return pai;
-    }
-
-    public void setPai(No pai) {
-        this.pai = pai;
-    }
-
-    public int getFatBal() {
-        return fatBal;
-    }
-
-    public void setFatBal(int fatBal) {
-        this.fatBal = fatBal;
-    }
 }

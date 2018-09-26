@@ -4,11 +4,8 @@ public class Cliente {
     private String email;
     private String telefone;
 
-    public Cliente(String cpf, String nome, String email, String telefone) {
+    public Cliente(String cpf) {
         this.cpf = cpf;
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
     }
 
     public String getCpf() {
